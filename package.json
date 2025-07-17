@@ -30,7 +30,7 @@
             ],
             "icon": "icon",
             "maintainer": "Samuel Pedrera",
-            "description": "A program that opens executables through a GUI",
+            "description": "An app to make transfers in the solana network",
             "category": "Utility",
             "packageCategory": "utility"
         }
