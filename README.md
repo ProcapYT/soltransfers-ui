@@ -36,7 +36,7 @@ document.head.append($script);
 
 - Install all dependencies with: `npm install` or `npm i`
 
-> [!WARN]
+> [!WARNING]
 > The app has not been tested on macOS due to unavailability of macOS hardware
 
 ### Start
