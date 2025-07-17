@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../cron-input-ui/cron-input-ui.min.js" async></script>
+    <link rel="stylesheet" href="../cron-input-ui/cron-input-ui.min.css">
+    <link rel="stylesheet" href="./send.css">
+    <link rel="stylesheet" href="../general.css">
+    <title>Soltransfers</title>
+</head>
+
+<body>
+    <div class="backButton"><i class="fa-solid fa-angle-left"></i></div>
+
+    <div class="tokenName"></div>
+
+    <div class="errorContainer hidden"></div>
+
+    <div class="amountContainer">
+        <div class="inputContainer">
+            <input type="text" id="sendAmountToken" class="numericInput" pattern="[0-9]*\.?[0-9]*">
+            <div class="symbol">SOL</div>
+        </div>
+
+        <div class="inputContainer">
+            <input type="text" id="sendAmountUSD" class="numericInput" pattern="[0-9]*\.?[0-9]*">
+            <div class="dollar">$</div>
+        </div>
+    </div>
+
+    <div class="recieverContainer">
+        <label for="recieverKey">Reciever Address</label>
+        <input type="text" placeholder="Solana Address" id="recieverKey">
+    </div>
+
+    <div class="toggleGroup">
+        <div>
+            <input type="radio" name="transacctionType" id="oneTimeRadio" value="oneTime" checked>
+            <label for="oneTimeRadio">One time transacction</label>
+        </div>
+
+        <div style="margin-top: 10px;">
+            <input type="radio" name="transacctionType" id="periodicRadio" value="periodic">
+            <label for="periodicRadio">Periodical transacction</label>
+        </div>
+    </div>
+
+    <div class="cronInputContainer hidden">
+        <cron-input-ui 
+            color="007BFF" 
+            value="* * * * *" 
+            class="cronInputUi"
+            required="true"
+            show-message="true"
+            width="400"
+        ></cron-input-ui>
+        <div class="cronDescription"></div>
+    </div>
+
+    <div class="sendButton">
+        <div class="mainContent"><i class="fa-solid fa-paper-plane"></i> &nbsp; Send</div>
+        <div class="loader buttonLoader hidden"></div>
+    </div>
+
+    <div class="editButton hidden">
+        <div class="mainContent"><i class="fa-solid fa-pencil"></i> &nbsp; Edit</div>
+        <div class="loader buttonLoader hidden"></div>
+    </div>
+
+    <script type="module" src="../inputConfig.js"></script>
+    <script type="module" src="./send.js"></script>
+    <script src="../fontawesomeLoader.js"></script>
+</body>
+
+</html>

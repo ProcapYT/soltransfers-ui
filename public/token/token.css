@@ -1,0 +1,132 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chartContainer {
+    position: relative;
+    width: 600px;
+    height: 300px;
+}
+
+.chartLoader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.chartOptions {
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.chartTime {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+}
+
+.chartTime:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#chart {
+    width: 600px;
+    height: 300px;
+}
+
+.errorContainer {
+    width: 400px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffa0a0;
+    border: 2px solid #f00;
+    color: #f00;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tokenName {
+    margin-top: 10px;
+    font-size: x-large;
+    color: #fff;
+    font-weight: bold;
+}
+
+.tokenAmount {
+    margin-top: 5px;
+    color: #ccc;
+}
+
+.tokenPrice {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 45px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.buttonContainer {
+    position: fixed;
+    bottom: 10px;
+    width: 600px;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sendButton, .swapButton {
+    width: 600px;
+    height: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.sendButton { background-color: #007BFF; }
+.sendButton:hover { background-color: #0056b3; }
+.swapButton { background-color: #28a745; }
+.swapButton:hover { background-color: #1e7e34; }
+
+.backButton {
+    position: fixed;
+    left: calc(50% - 300px);
+    transform: translateX(-50%);
+    top: 10px;
+    font-size: large;
+    width: 40px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backButton:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}

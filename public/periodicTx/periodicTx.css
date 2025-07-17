@@ -1,0 +1,102 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.txList {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.txContainer {
+    width: 100%;
+    height: 80px;
+    background-color: #505050;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.tokenLogo {
+    width: 60px;
+    aspect-ratio: 1 / 1;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.tokenAmount {
+    position: absolute;
+    left: 80px;
+    top: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.nextTx {
+    position: absolute;
+    left: 80px;
+    bottom: 10px;
+    color: #ddd;
+}
+
+.reciever {
+    position: absolute;
+    left: 80px;
+    top: 25px;
+    color: #ccc;
+    font-weight: bold;
+}
+
+.txStatus {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.editButton, .deleteButton {
+    position: absolute;
+    color: #ddd;
+    width: 30px;
+    aspect-ratio: 1 / 1;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.editButton:hover, .deleteButton:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.deleteButton {
+    bottom: 10px;
+    right: 10px;
+}
+
+.editButton {
+    bottom: 10px;
+    right: 50px;
+}
+
+.loaderContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.noTxMessage {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: xx-large;
+    color: #fff;
+    font-weight: bold;
+}

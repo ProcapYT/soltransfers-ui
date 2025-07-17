@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="token.css">
+    <link rel="stylesheet" href="../general.css">
+    <title>Soltransfers</title>
+</head>
+
+<body>
+    <div class="backButton"><i class="fa-solid fa-angle-left"></i></div>
+
+    <div class="tokenName"></div>
+    <div class="tokenAmount"></div>
+    <div class="tokenPrice"></div>
+
+    <div class="chartContainer">
+        <div class="chartLoader">
+            <div class="loader"></div>
+        </div>
+
+        <div class="errorContainer hidden">429 Too Many Requests</div>
+
+        <canvas id="chart"></canvas>
+
+        <div class="chartOptions">
+            <div class="chartTime" data-days="1">1D</div>
+            <div class="chartTime" data-days="7">7D</div>
+            <div class="chartTime" data-days="30">1M</div>
+            <div class="chartTime" data-days="90">3M</div>
+            <div class="chartTime" data-days="180">6M</div>
+            <div class="chartTime" data-days="365">1Y</div>
+        </div>
+    </div>
+
+    <div class="buttonContainer">
+        <div class="sendButton"><i class="fa-solid fa-paper-plane"></i> &nbsp; Send</div>
+    </div>
+
+    <script type="module" src="./token.js"></script>
+    <script src="../fontawesomeLoader.js"></script>
+</body>
+
+</html>

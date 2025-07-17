@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./tokenList.css">
+        <link rel="stylesheet" href="../general.css">
+        <title>Soltransfers</title>
+    </head>
+    <body>
+        <div class="loaderContainer">
+            <div class="loader"></div>
+        </div>
+
+        <div class="errorContainer hidden">
+            Erro mu gordo
+        </div>
+
+        <div style="position: relative; width: 600px; height: 50px; margin-top: 10px;">
+            <div class="tokensTitle">Portfolio:</div>
+            <div class="reloadButton"><i class="fa-solid fa-rotate"></i></div>
+        </div>
+
+        <div class="tokenList"></div>
+
+        <div class="blurBackground hidden"></div>
+
+        <div class="pendingTxs hidden">
+            <div class="pendingTxsLoader">
+                <div class="loader"></div>
+            </div>
+            
+            <div class="txList"></div>
+            <div class="lowerMenu">
+                <div class="executeAllButton">
+                    <div class="mainContent">Execute All</div>
+                    <div class="buttonLoader hidden"><div class="loader"></div></div>
+                </div>
+
+                <div class="skipAllButton">Skip All</div>
+            </div>
+        </div>
+
+        <script type="module" src="./tokenList.js"></script>
+        <script type="module" src="./pendingTx.js"></script>
+        <script src="../fontawesomeLoader.js"></script>
+    </body>
+</html>

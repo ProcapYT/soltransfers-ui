@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="../general.css">
+        <title>Login - Soltransfers</title>
+    </head>
+    <body>
+        <div style="width: 400px;">
+            <div class="loginTitle">Log in</div>
+            <div class="loginSubtitle">We are happy to see you back!</div>
+        </div>
+
+        <div style="width: 400px;">
+            <div class="stepsIndicator">Step 1 of 2: Setup your password</div>
+        </div>
+
+        <div class="errorContainer hidden">
+            <div id="closeError"><i class="fa-solid fa-xmark"></i></div>
+            <div id="errorMessage">Erro mu gordo</div>
+        </div>
+
+        <div class="passwordContainer">
+            <label for="decodePasswordInput">Encoding and decoding password</label>
+            <input type="password" id="decodePasswordInput" placeholder="******">
+
+            <div class="acceptPasswordButton button">Accept</div>
+        </div>
+
+        <div class="mainContainer hidden">
+            <div id="privateKeyLogin">
+                <label for="publicKeyInput">Public Key</label>
+                <input type="password" placeholder="***************" id="publicKeyInput">
+    
+                <label for="privateKeyInput">Private Key (secret key)</label>
+                <input type="password" placeholder="***************" id="privateKeyInput">
+    
+                <div class="acceptButton button">Accept</div>
+            </div>
+
+            <div id="seedPhraseLogin" class="hidden">
+                <input type="password" placeholder="1." id="1" class="seedPhraseInput">
+                <input type="password" placeholder="2." id="2" class="seedPhraseInput">
+                <input type="password" placeholder="3." id="3" class="seedPhraseInput">
+                <input type="password" placeholder="4." id="4" class="seedPhraseInput">
+                <input type="password" placeholder="5." id="5" class="seedPhraseInput">
+                <input type="password" placeholder="6." id="6" class="seedPhraseInput">
+                <input type="password" placeholder="7." id="7" class="seedPhraseInput">
+                <input type="password" placeholder="8." id="8" class="seedPhraseInput">
+                <input type="password" placeholder="9." id="9" class="seedPhraseInput">
+                <input type="password" placeholder="10." id="10" class="seedPhraseInput">
+                <input type="password" placeholder="11." id="11" class="seedPhraseInput">
+                <input type="password" placeholder="12." id="12" class="seedPhraseInput">
+
+                <div class="acceptButton button">Accept</div>
+            </div>
+        </div>
+
+        <div style="width: 400px;">
+            <div id="loginModeChanger" class="hidden" data-login-mode="privateKey">Use seed phrase</div>
+        </div>
+
+        <script type="module" src="./main-login.js"></script>
+        <script type="module" src="./login-error.js"></script>
+        <script type="module" src="../inputConfig.js"></script>
+        <script src="../fontawesomeLoader.js"></script>
+    </body>
+</html>

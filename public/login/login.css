@@ -1,0 +1,111 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mainContainer, .passwordContainer {
+    width: 400px;
+    background-color: #606060;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+label {
+    color: #ddd;
+    font-weight: bold;
+    font-size: small;
+    margin-left: 10px;
+}
+
+input {
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #808080;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+input::placeholder {
+    color: #ccc;
+}
+
+.button {
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    height: 35px;
+    background-color: #0077ff;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+
+.button:hover {
+    background-color: #0068df;
+}
+
+.loginTitle {
+    color: #fff;
+    font-weight: bold;
+    font-size: xx-large;
+    margin-bottom: 7px;
+}
+
+.loginSubtitle {
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #ccc;
+}
+
+#loginModeChanger {
+    color: rgb(0, 89, 255);
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    user-select: none;
+}
+
+.seedPhraseInput {
+    width: calc(48% - 10px);
+}
+
+.errorContainer {
+    width: 400px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffa0a0;
+    border: 2px solid #f00;
+    color: #f00;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#closeError {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color: red;
+    cursor: pointer;
+}
+
+.stepsIndicator {
+    color: #fff;
+    margin-bottom: 10px;
+}

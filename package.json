@@ -1,0 +1,63 @@
+{
+    "name": "soltransfers",
+    "version": "1.0.0",
+    "main": "src/main.js",
+    "scripts": {
+        "start": "electron .",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build-win": "electron-builder --win nsis",
+        "build-linux": "electron-builder --linux deb"
+    },
+    "build": {
+        "appId": "com.sam.soltransfers",
+        "productName": "Soltransfers",
+        "win": {
+            "icon": "icon/256x256.png",
+            "target": "nsis"
+        },
+        "nsis": {
+            "oneClick": false,
+            "perMachine": false,
+            "allowToChangeInstallationDirectory": true
+        },
+        "mac": {
+            "target": "dmg",
+            "icon": "icon/256x256.png"
+        },
+        "linux": {
+            "target": [
+                "deb"
+            ],
+            "icon": "icon",
+            "maintainer": "Samuel Pedrera",
+            "description": "A program that opens executables through a GUI",
+            "category": "Utility",
+            "packageCategory": "utility"
+        }
+    },
+    "keywords": [],
+    "author": "Samuel Pedrera",
+    "license": "MIT",
+    "description": "An app to make transfers in the solana network",
+    "devDependencies": {
+        "electron": "^37.2.0",
+        "electron-builder": "^26.0.12"
+    },
+    "dependencies": {
+        "@solana/spl-token": "^0.4.13",
+        "@solana/web3.js": "^1.98.2",
+        "ansi_up": "^6.0.6",
+        "bip39": "^3.1.0",
+        "bs58": "^6.0.0",
+        "chart.js": "^4.5.0",
+        "cron": "^4.3.2",
+        "cron-parser": "^5.3.0",
+        "cron-validator": "^1.4.0",
+        "cronstrue": "^3.0.0",
+        "ed25519-hd-key": "^1.3.0",
+        "electron-window-state": "^5.0.3",
+        "node-fetch": "^3.3.2",
+        "samcolors": "^1.1.0",
+        "uuid": "^11.1.0"
+    }
+}

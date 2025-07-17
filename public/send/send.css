@@ -1,0 +1,152 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.amountContainer {
+    background-color: #505050;
+    height: 110px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.recieverContainer {
+    background-color: #505050;
+    width: 400px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#sendAmountToken, #sendAmountUSD {
+    height: 40px;
+    background-color: #606060;
+    width: 330px;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: #fff;
+}
+
+.symbol, .dollar {
+    height: 40px;
+    width: 50px;
+    background-color: #606060;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.inputContainer {
+    display: flex; 
+    align-items: center; 
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.tokenName {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: xx-large;
+    color: #fff;
+    font-weight: bold;
+}
+
+.backButton {
+    position: fixed;
+    left: calc(50% - 200px);
+    transform: translateX(-50%);
+    top: 10px;
+    font-size: large;
+    width: 40px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backButton:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#recieverKey {
+    height: 40px;
+    background-color: #606060;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 5px;
+}
+
+#recieverKey::placeholder {
+    color: #ccc;
+}
+
+label {
+    color: #ddd;
+    font-weight: bold;
+    font-size: small;
+}
+
+.sendButton, .editButton {
+    position: fixed;
+    bottom: 10px;
+    width: 400px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #007BFF;
+}
+
+.sendButton:hover, .editButton:hover { 
+    background-color: #0056b3; 
+}
+
+.errorContainer {
+    width: 400px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffa0a0;
+    border: 2px solid #f00;
+    color: #f00;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.toggleGroup {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.cronInputContainer {
+    margin-top: 20px;
+    width: 400px;
+}
+
+.cronDescription {
+    margin-top: 10px;
+    color: #fff;
+}
