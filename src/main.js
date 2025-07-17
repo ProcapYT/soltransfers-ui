@@ -4,12 +4,23 @@ const fs = require("node:fs");
 const { createModal } = require("./passwordWindow.js");
 const { cronJobs } = require("./transfer.connection.js");
 const windowStateKeeper = require("electron-window-state");
+const AutoLaunch = require("auto-launch");
 
 // Used to see if you need to hide the main window or close it
 let isQuiting = false;
 
 // Timer to lock the app when it is an x amount of minutes without focusing
 let blurTimer = null;
+
+// Start on startup
+if (app.isPackaged) {
+    const appLauncher = new AutoLaunch({
+        name: "Soltransfers",
+        path: process.execPath,
+    });
+    
+    appLauncher.enable();
+}
 
 function createMainWindow() {
     // So the state of the main window persists (width and height)
